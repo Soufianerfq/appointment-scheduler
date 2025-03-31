@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+
+
+
+.Modal>input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+    margin: 0px;
+}
+
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    border: 1px solid rgb(192, 192, 192);
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 0px;
+    width: 100%;
+
+}
+
+input:focus {
+    outline: 2px solid rgb(59 130 246);
+}
+
+#date {
+    margin-left: 0px;
+    width: 100%;
+}
+
+#schedule {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #51b6e8;
+    color: white;
+    transition: background-color 0.1s
+}
+
+#schedule:hover {
+    background-color: #085d87;
+}
+
+#cancel {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #e85151;
+    color: white;
+    transition: background-color 0.1s
+}
+
+#cancel:hover {
+    background-color: #982727;
+}
+
+#reschedule {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #fa9f63;
+    color: white;
+    transition: background-color 0.1s
+}
+
+#reschedule:hover {
+    background-color: #9b5f37;
+}
+
+
+.fc-scrollgrid {
+    /* border: 1px solid black !important; */
+    border-radius: 10px !important;
+    border: 1px solid #ddd !important;
+}
+
+.fc-theme-standard td {
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+}
+
+/* sidenav styling */
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    padding: 0px;
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+}
+
+label:before {
+    display: block;
+    /* border-radius: 50%; */
+    border: 1px solid grey;
+    transition-duration: 0.4s;
+    transform: scale(1);
+
+}
+
+label #dir {
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    padding: 5px;
+    margin: 5px;
+    padding-left: 0px;
+    margin-left: 0px;
+
+}
+
+:checked+label #dir {
+    transform: scale(1);
+    background-color: rgba(140, 192, 245, 0.492);
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    color: rgb(115, 184, 253);
+}
+
+/* calendar header */
+.fc-toolbar-title {
+    font-family: moon-dance;
+    font-weight: bold;
+    font-size: 3rem !important;
+}
+
+/*Buttons */
+.fc-button-primary {
+    background-color: #e85151 !important;
+    border: none !important;
+}
+
+.fc-button-group {
+    margin-left: 10px !important;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.08);
+}
+
+.fc-customButton-button {
+    background-color: #346dff !important;
+    margin-right: 10px !important;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* ////////////////////////////////////////////// */
+a {
+    font-family: moon-dance;
+    font-size: 1.2em;
+}
+
+/* .newApp {
+    border-bottom: 1px solid #ebebeb;
+} */
+
+h2 {
+    font-weight: 700;
+    font-size: small;
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+
+
+.fc-media-screen {
+    padding: 5px;
+}
+
+.fc-view {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+#patients{
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.hidden{
+    display: none
+}
