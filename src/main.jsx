@@ -7,7 +7,7 @@ import { BrowserRouter, HashRouter } from "react-router-dom";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="appointment-scheduler">
+    <BrowserRouter >
       <App />
     </BrowserRouter>
   </StrictMode>,
